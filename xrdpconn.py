@@ -78,7 +78,8 @@ class XFreeRDPWrapper:
 
 
 def main():
-    parser = ArgumentParser(description='Helps me with xfreerdp')
+    parser = ArgumentParser(description='Helps me with xfreerdp',
+                            epilog='EXAMPLE: ./xrdpconn.py 127.0.0.1 -u localadmin -dr -da')
     parser.add_argument('ip', help='IP to connect to')
     parser.add_argument('--port', help='Port to connect to', default=None, type=int)
     parser.add_argument('-u', '--user', help='Connecting user', type=str)
